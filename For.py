@@ -20,9 +20,20 @@
 #    else:
 #        print ("Didn't find it!")
 
-girls = ['alice','bernice','clarice']
-boys = ['chris','arnold','bob']
-letterGirls = {}
-for girl in girls:
-    letterGirls.setdefault(girl[0], []).append(girl)
-    print ([b+'+'+g for b in boys for g in letterGirls[b[0]]])
+# girls = ['alice','bernice','clarice']
+# boys = ['chris','arnold','bob']
+# letterGirls = {}
+# for girl in girls:
+#    letterGirls.setdefault(girl[0], []).append(girl)
+#    print ([b+'+'+g for b in boys for g in letterGirls[b[0]]])
+
+#fibs=[0,1]
+#for i in range(8):
+#    fibs.append(fibs[-2] + fibs[-1])
+#print (fibs)
+
+def fibs(num):
+    result = [0,1]
+    for i in range(num - 2):
+        result.append(result[-2]+result[-1])
+    return result
